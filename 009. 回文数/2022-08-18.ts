@@ -1,4 +1,4 @@
-function isPalindrome1(x: number): boolean {
+function isPalindromeOne(x: number): boolean {
   let result = true;
   if (x < 0) return false;
   const str = x.toString();
@@ -14,7 +14,7 @@ function isPalindrome1(x: number): boolean {
   return result;
 }
 
-function isPalindrome2(x: number): boolean {
+function isPalindromeTwo(x: number): boolean {
   if (x < 0 || (x % 10 === 0 && x !== 0)) return false;
   let revertNumber = 0;
   while (x > revertNumber) {

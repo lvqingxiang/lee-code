@@ -1,4 +1,4 @@
-function longestPalindrome1(s: string): string {
+function longestPalindromeOne(s: string): string {
   const len = s.length;
   let maxNum = 0;
   let begin = 0;
@@ -24,7 +24,7 @@ function longestPalindrome1(s: string): string {
   return s.slice(begin, begin + maxNum);
 }
 
-function longestPalindrome2(s: string): string {
+function longestPalindromeTwo(s: string): string {
   if (s.length < 2) return s;
   let dp: Boolean[][] = new Array(s.length).fill(0).map((i) => []);
   let max = 1;
